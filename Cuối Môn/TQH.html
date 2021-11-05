@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bài 4</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"/> -->
+	<link href="css/Site_4.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+	<script src = "js/wow.min.js"> </script>
+              <script>
+              new WOW().init();
+              </script>
+	
+	
+	
+</head>
+<body>
+<!-- menu -->
+<section id="menubar">
+	<div class="container2" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+	<b>
+	<nav class="navbar">
+		  <a href="#home">TRANG CHỦ</a>
+		  <a href="#gt">SHOP</a>
+		  <div class="dropdown">
+			    <a href="#lienhe">LIÊN HỆ</a>
+			    <div class="dropdown-content">
+				      <a href="#">Giao hàng tận nơi</a>
+				      <a href="#">Phục phụ tiệc nhẹ</a>
+			    </div>
+		  </div>
+		  <div class="dropdown">
+			    <button class="dropbtn">SẢN PHẨM</button>
+			  	</b>
+			    <div class="dropdown-content">
+					
+				      <a href="#">Nike Jodan</a>
+				      <a href="#">Air force 1</a>
+				      <a href="#">Air Max 90</a>
+				      <a href="#">Air Max 97</a>
+					
+	</div>
+	</div>
+	  <div class="search-container">
+    <form action="/action_page.php">
+		
+		<input type="text" placeholder="Tìm kiếm......" name="search">
+		
+    </form>
+  </div>
+
+	</nav>
+	<div class="clearfix"> </div>
+</section >
+	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/josh-redd-Q9S0w7Bhx3A-unsplash.jpg" style="width:100%;height: 1000px;">
+  <div class="text">NIKE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/g1 (15).jpg" style="width:100%;height: 1000px;">
+  <div class="text">AIR FORCE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/malvestida-magazine-DMl5gG0yWWY-unsplash.jpg" style="width:100%;height: 1000px">
+  <div class="text">AIR MAX 90</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<div class="hinh-banner">
+    <h1>AIR MAX 90</h1>
+    <p>The Nike Air Max 90 is a classic sneaker from 1990 and just last year, it got to celebrate its 30th anniversary in style. If you are a fan of the Air Max 90, you have seen numerous colorways make their way to the market over the past couple of years, and they all have had some sort of unique flair to them.</p>
+  </div>
+	
+<div id="logo">
+	</div>
+
+<section id="product">
+	<div class="title-product">
+	<h1>AIR FORCE 1</h1>
+	<p>Các kế hoạch đầy đủ cho năm 2022 của Nike Air Force 1 Low chưa được thương hiệu tiết lộ, nhưng điều chắc chắn là chúng sẽ bao gồm các bộ quần áo bền vững hơn dưới biểu ngữ Nature Banner.</p>
+	</div>
+		<div class="row">
+  <div class="column">
+    <img src="images/sonny-mauricio-XP0dfCag_6g-unsplash.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/erik-mclean-SSb8DT51hX8-unsplash.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/leon-skibitzki-mHUk4Se7peY-unsplash.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/g1 (7).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+			
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+  <div class="mySlides2">
+    <div class="numbertext">1 / 4</div>
+      <img src="images/g1 (15).jpg" style="width:100%">
+    </div>
+ <div class="mySlides2">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/g1 (7).jpg" style="width:100%">
+ </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/g1 (11).jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides2">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/g1 (14).jpg" style="width:100%">
+    </div>
+    
+    <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/g1 (15).jpg" style="width:100%" onclick="currentSlide(1)" alt="Nike">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/g1 (7).jpg" style="width:100%" onclick="currentSlide(2)" alt="Nike">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/g1 (11).jpg" style="width:100%" onclick="currentSlide(3)" alt="Nike">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/g1 (14).jpg" style="width:100%" onclick="currentSlide(4)" alt="Nike">
+    </div>
+  </div>
+</div>
+</section>
+<!--cripts lightbox-->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<section id="service" >
+	<div class="title-head-left">
+		<h3 class="title">SHOP</h3>
+		<h4>Shop</h4>
+	</div>
+	<div class="serve-grids">
+		<div class="serve-left">
+			<div class="service-grid">
+				<div class="icon">
+				 	<img src="images/g1 (10).jpg">
+				</div>
+				<h5>120$</h5>
+				<p>Air Force1</p>
+				<div class="buy"><button><b>Buy</b></button></div>
+			</div>
+			<div class="service-grid">
+				<div class="icon">
+				 	<img src="images/stephan-schmid-_hbzYIB4l9Q-unsplash.jpg">
+				</div>
+				<h5>220$</h5>
+				<p>Air Force1</p>
+				<div class="buy"><button><b>Buy</b></button></div>
+			</div>
+			
+		</div>
+	
+                    
+
+		<div class="serve-img">
+			<img  src="images/solesavy-2tfHt0sfv3w-unsplash.jpg">
+		</div>
+	</div>
+	<div class="serve-grids">
+		<div class="serve-img">
+			<img src="images/deepal-tamang--aMhLQwGd2g-unsplash.jpg">
+		</div>
+		<div class="serve-left">
+			<div class="service-grid">
+				<div class="icon">
+				 	<img src="images/g1 (13).jpg">
+				</div>
+				<h5>189$</h5>
+				<p>Air Force1</p>
+				<div class="buy"><button><b>Buy</b></button></div>
+			</div>
+            <div class="service-grid">
+				<div class="icon">
+				 	<img  src="images/g1 (9).jpg">
+				</div>
+			    <h5>150$</h5>
+				<p>Air Force1</p>
+		<div class="buy"><button><b>Buy</b></button></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Bài viết -->
+
+<section id="gallery">
+    <div class="main">
+	<div class="title-head-right" style="padding-right: 0">
+	  <h3 class="title">NIKE</h3>	
+	  <h4 style="right: 0">NIKE</h4>
+	</div>
+	</div>
+	<div class="anh">
+	   <div class="gird">
+		<img src="images/g1 (12).jpg">
+	   <div class="overlay">
+	<div class="text-gird"><h3>SOLD</h3>
+	</div>   
+	  </div>
+	  </div>
+	  
+	
+	   <div class="gird">
+		<img src="images/g1 (6).jpg">
+	   <div class="overlay">
+	<div class="text-gird"><h3>SOLD</h3></div>   
+	  </div>
+	  </div>
+	
+	   <div class="gird">
+		<img src="images/g1 (9).jpg">
+	   <div class="overlay">
+	<div class="text-gird"><h3>SOLD</h3></div>   
+	  </div>
+	  </div>
+	
+	   <div class="gird">
+		<img src="images/ox-street-BWPqHZBhMVA-unsplash.jpg">
+	   <div class="overlay">
+	<div class="text-gird"><h3>SOLD</h3></div>   
+	  </div>
+	  </div>
+		 <div class="gird">
+		<img src="images/ox-street-PHJr-VdFO2o-unsplash.jpg">
+	   <div class="overlay">
+	<div class="text-gird"><h3>SOLD</h3></div>   
+	  </div>
+	  </div>
+	  </div>
+</section>
+	<section id="demos1">
+      <div class="row3">
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme">
+            <div class="item3">
+              <!-- <h4>1</h4> -->
+              <img src="images/sonny-mauricio-XP0dfCag_6g-unsplash.jpg" />
+            </div>
+            <div class="item3">
+              <!-- <h4>2</h4> -->
+              <img src="images/erik-mclean-SSb8DT51hX8-unsplash.jpg"  />
+            </div>
+            <div class="item3">
+              <!-- <h4>3</h4> -->
+              <img src="images/connor-houtman-VxzlyJk-2to-unsplash.jpg"  />
+            </div>
+            <div class="item3">
+              <!-- <h4>4</h4> -->
+              <img src="images/g1 (10).jpg"  />
+            </div>
+            <div class="item3">
+              <!-- <h4>5</h4> -->
+              <img src="images/g1 (7).jpg"  />
+            </div>
+            <div class="item3">
+              <!-- <h4>6</h4> -->
+              <img src="images/g1 (11).jpg"/>
+            </div>
+            <div class="item3">
+              <!-- <h4>7</h4> -->
+              <img src="images/g1 (14).jpg" />
+            </div>
+            <div class="item3">
+              <!-- <h4>8</h4> -->
+              <img src="images/ryan-plomp-PGTO_A0eLt4-unsplash.jpg" />
+            </div>
+            <div class="item3">
+              <!-- <h4>9</h4> -->
+              <img src="images/g1 (15).jpg" />
+            </div>
+            <div class="item3">
+              <!-- <h4>10</h4> -->
+              <img src="images/travis-essinger-iOv3CqiZLtE-unsplash.jpg"/>
+            </div>
+            <div class="item3">
+              <!-- <h4>11</h4> -->
+              <img src="images/deepal-tamang--aMhLQwGd2g-unsplash.jpg" />
+            </div>
+            <div class="item3">
+              <!-- <h4>12</h4> -->
+              <img src="images/solesavy-2tfHt0sfv3w-unsplash.jpg" />
+            </div>
+          </div>
+        </div>
+       </div>  
+    </section>
+	<div class="lienhe">
+  <div style="text-align:center">
+    <h2>Liên hệ</h2>
+    <p>Cảm ơn đã ủng hộ mọi chi tiết liên hệ bên dưới.</p>
+  </div>
+  <div class="row2">
+    <div class="column2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.492647296573!2d106.60897656977542!3d10.801878000000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bfa676c9b0b%3A0xc2a7163f92d71765!2sNike%20-%20Aeon%20Mall%20Tan%20Phu!5e0!3m2!1svi!2s!4v1636087283474!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="column2">
+      <form action="/action_page.php">
+        <label for="fname">Tên</label>
+        <input type="text" id="fname" name="firstname" placeholder="Tên của bạn.....">
+        <label for="lname">Họ</label>
+        <input type="text" id="lname" name="lastname" placeholder="Họ của bạn....">
+        <label for="country">Thành phố</label>
+        <select id="country" name="country">
+          <option value="australia">Long An</option>
+          <option value="canada">TP.Hồ Chí Minh</option>
+          <option value="usa">Cần Thơ</option>
+        </select>
+        <label for="subject">Lời nhắn</label>
+        <textarea id="subject" name="subject" placeholder="điền ở đây......." style="height:170px"></textarea>
+        <input type="submit" value="Gửi đi">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+	
+	 
+
+<!-- footer: bản quyền -->
+<footer id="footer">
+	<div class="main" >
+		<i class="fa fa-instagram" style="font-size:30px"></i>
+		<i class="fa fa-facebook-square" style="font-size:30px;color:blue"></i>
+		<i class="fa fa-twitter" style="font-size:30px;color:yellow"></i>
+		<i class="fa fa-youtube-play" style="font-size:30px;color:red"></i>
+		<i class="fa fa-google" style="font-size:30px"></i>
+		<p>@11-2021 - Design by TQH</p>
+	</div>
+</footer>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--	script back to top-->
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+<!--	slide-->
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	<script>
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+	
+
+</body>
+</html>
+
+

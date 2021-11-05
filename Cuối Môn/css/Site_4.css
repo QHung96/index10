@@ -1,0 +1,794 @@
+/* CSS Document */
+/* Phần cung cấp dùng chung*/
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:0.85em;
+	margin: 0px 15px 30px 15px;
+}
+.clearfix{
+	clear: both;
+}
+a:link{
+	text-decoration: none;
+}
+@font-face{
+	font-family:font_shop;
+	src: url('../fonts/VNI-THUPHAP1.TTF');
+}
+@font-face{
+	font-family:font_khauhieu;
+	src: url('../fonts/UTM ViceroyJF.ttf');
+}
+@font-face{
+	font-family:font-chung; 
+	src:url('../fonts/Philosopher-Bold.ttf'),url('../fonts/Philosopher-BoldItalic.ttf'),
+		url('../fonts/Philosopher-Italic.ttf'),url('../fonts/Philosopher-Regular.ttf');
+}
+h1, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: font-chung;
+    line-height: 1.1;
+}
+.main
+{
+	width: 80%; margin: 0 auto;
+	overflow: auto;
+}
+*{
+	box-sizing: border-box;
+}
+/* End Dùng chung*/
+
+/* Menu */
+#menubar{
+	background:#000000;
+	display: flex;
+	justify-content: center;
+}
+.navbar {
+	width:100%;
+	overflow: hidden;
+	
+}
+.navbar a {
+    display:flex;font-size: 15px;  color: white;
+	justify-content: center;
+    text-align: center; padding:  28px 30px 0 30px;
+    text-decoration: none; float: left}
+.dropdown {
+    float: left; overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px; border: none; 
+    color: white;  padding: 28px 0px 30px 25px ;
+    background-color: inherit;
+    font-family: inherit; margin: 0; 
+ }
+.navbar a:hover, .dropdown:hover .dropbtn {
+   color:yellow; 
+ }
+.dropdown-content {
+   display: none;   /* Che thực đơn con*/
+    position: absolute; background-color: #f9f9f9;
+    min-width: 160px; z-index: 1;
+    box-shadow: 0px 8px 16px 0px #e6e6e6;
+}
+.dropdown-content a {
+	clear:both;
+    color: black;
+    padding: 12px 16px; text-decoration: none;
+    display: flex; text-align: left; 
+  }
+.dropdown-content a:hover {
+    background-color: #ddd;	
+}
+.dropdown:hover .dropdown-content {
+	display:flex; 
+}
+#banner{
+	height: auto;position: relative;
+	background-size: cover;
+	
+}
+
+
+#banner {
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+#banner img {vertical-align: middle;}
+
+.hinh-banner {
+  position: absolute;
+  TOP: 830px;
+  background: #ffffff;
+  opacity: 0.8;
+  color: #717171;
+  width: 100%;
+  padding: 15px;
+	text-align: inherit;
+	height: 200px;
+	font-size: 21px;
+	animation: fadeInToLeft 3s 1s forwards;
+}
+.hinh-banner h1{
+	color: #000000;
+	text-align: center;
+}
+.buy button{
+	background-color: #000000;color: #ffffff;
+	border-radius: 20px;
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+}
+
+	
+.tenquan h1{
+	color: #decba5; font-size:60px;
+	word-spacing: 10px;font-family:font_shop;
+	
+}
+.khauhieu{
+	position: absolute;bottom: 200px;left: 50px;opacity:0;
+	animation: fadeInTopLeft 3s 2s forwards;
+}
+.khauhieu h1{
+	color: #ffffff;
+	word-spacing: 10px;font-family:font_khauhieu; font-size:100px;
+}
+#logo{
+	width: 200px;height: 200px;
+	z-index: 10;
+	border-radius: 0%;
+	background: url("../images/g1 (1).png");
+	position: absolute;
+	top:50px;left: 700px;
+	background-size: 100%;
+	
+	
+	animation: flipOutY 2s infinite;
+}
+#logo:hover{
+	animation: none;
+}
+
+/* Service */
+#service{
+	background:url("../images/connor-houtman-VxzlyJk-2to-unsplash.jpg"); padding: 4em 0;
+	background-size:cover;
+}
+.title-head-left {
+	position:relative;top: 45%;padding-left: 10%;
+    text-align: left;
+	color: #717171;
+}
+.title-head-left h4 {
+    color: #FFFFFF;font-size: 2.5em;
+    font-weight: 600;position: absolute;
+    text-transform: uppercase;
+    top: 20%; left: 10%;
+}
+.serve-grids{
+    padding: 2em 0 2em 0;
+    display: flex; justify-content: center;
+	
+}
+.serve-left {
+	width:50%; display: flex; justify-content: center;
+}
+.service-grid {
+     text-align: center; width: 100%;
+	
+}
+.icon {
+    width: 300px; height: 300px;
+    border-radius: 50%; margin: 0 auto;
+    text-align: center; position: relative;
+    background: #fff; border: 2px solid #fff;
+	transition: width 2s, height 2s;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+   background-size: cover;
+	height: 100%;
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #717171;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.icon:hover{
+	width: 400px;height: 400px;
+}
+.icon img{
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.service-grid h5 {
+    color: yellow; font-size: 1.8em;
+    font-weight: 400;
+    margin: 0.5em 0 0 0;
+	
+}
+.service-grid p {
+    color: #ffffff;font-size: 1em;opacity: inherit;
+    margin: 0 auto; width: 84%;
+    line-height: 1.9em;font-weight: 600;
+    text-align: center;
+}
+.serve-img{
+	width: 50%;
+	text-align: center;
+}
+.serve-img img {
+    width: 50%;
+	border: #ffffff 2px solid;
+}
+/* Những Câu chuyện */
+
+#gallery{
+	padding: 4em 0;
+	background-color: #000000;
+	
+}
+.anh{
+	display: flex;justify-content: center;
+}
+.gird{
+	width: 16%;position: relative;
+	margin: 0 1%;
+}
+.gird img{
+	width: 100%;
+	border: #ffffff 2px solid;
+}
+.text-gird{
+	position:absolute;top:50%;left:50%;
+	color: #ffffff;font-size: 18px;text-align: center;
+	transform: translate(-50%,-50%)
+}
+.overlay{
+	position:absolute;top:0;
+	background-color: #000000;opacity:0.6;
+	width:100%;height:0%;
+	transition: .5s ease;
+	overflow: hidden;
+}
+.gird:hover .overlay{
+	height: 100%;
+}
+
+
+
+
+/*slideshow*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides1 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+
+
+/* Next & previous buttons */
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*lightbox*/
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+	border: #ffffff 2px solid;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#product{
+	padding: 50px;background: url("../images/josh-redd-Q9S0w7Bhx3A-unsplash.jpg") no-repeat 100%;
+	width: 100%;
+	background-size: cover;
+}
+.title-product{
+	color: #ffffff;text-align:center;
+	width: 100%; margin:0 auto;
+	padding-bottom: 5px;
+} 
+#product h1{
+	font-size: 36px;font-weight: 600;
+	font-family:  Arial, sans-serif;letter-spacing: 2px;
+	
+}
+#product p{
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 2;
+	background-color: #000000;
+	color: #ffffff;
+	
+}
+/*back to top*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.hinh-banner img{
+	width: 100%;
+}
+.container2 {
+  display: inline-block;
+  cursor: pointer;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+	
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.search-container {
+  float: right;
+	position: relative;
+	top: 30px;
+	right: 100px;
+	width: 160px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 20px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 2px solid #ccc;  
+  }
+}
+#footer{
+	background-color: #717171;
+
+}
+#footer p{
+	color: #ffffff;
+}
+.buy button:hover{
+	color: yellow;
+	
+}
+.main i{
+	position: relative;
+	left: 550px;
+	top: 20px;
+}
+.main i:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.search-container input{
+	margin-top: -16px;
+}
+input[type=submit] {
+  background-color: #717171;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: yellow;
+}
+
+/* Style the container/contact section */
+.lienhe {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 10px;
+	color: #ffffff;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+#demos1 .item img{
+    		width: 100%;
+}
+.owl-carousel{
+	background-color: #000000;
+	height: 100%;
+}
+.owl-carousel img{
+	border: #ffffff 2px solid;
+}
+
